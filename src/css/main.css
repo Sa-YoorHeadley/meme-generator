@@ -1,0 +1,92 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
+}
+
+:root {
+  --accent-color-1: #672280;
+  --accent-color-2: #A626D3;
+  --gradient: linear-gradient(90deg, var(--accent-color-1)1.18%, var(--accent-color-2) 100%);
+  --font-color: white;
+}
+
+.header {
+  background: -webkit-gradient(linear, left top, right top, color-stop(1.18%, var(--accent-color-1)), to(var(--accent-color-2)));
+  background: linear-gradient(90deg, var(--accent-color-1) 1.18%, var(--accent-color-2) 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 1.25rem;
+  color: var(--font-color);
+  z-index: 1;
+}
+
+.header .header-logo {
+  height: 2rem;
+  margin-right: .5rem;
+}
+
+.header .header-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.form {
+  display: -ms-grid;
+  display: grid;
+  margin-top: 6rem;
+  padding: 2.5em;
+  -ms-grid-rows: auto auto;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template: auto auto / 1fr 1fr;
+  -webkit-column-gap: 1.5em;
+          column-gap: 1.5em;
+  row-gap: .95rem;
+}
+
+.form .input {
+  outline: none;
+  border: 2px solid #d5d4d8;
+  padding: .75rem .5rem;
+  border-radius: .25rem;
+  color: black;
+  font-weight: 600;
+  -webkit-transition: border-color 200ms ease-in-out;
+  transition: border-color 200ms ease-in-out;
+}
+
+.form .input:hover, .form .input:focus {
+  border-color: #222;
+}
+
+.form .btn {
+  cursor: pointer;
+  grid-column: span 2;
+  border: none;
+  outline: none;
+  padding: .75em 0;
+  border-radius: .25rem;
+  background: -webkit-gradient(linear, left top, right top, color-stop(1.18%, var(--accent-color-1)), to(var(--accent-color-2)));
+  background: linear-gradient(90deg, var(--accent-color-1) 1.18%, var(--accent-color-2) 100%);
+  opacity: .9;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  -webkit-transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms ease-in-out;
+}
+
+.form .btn:hover, .form .btn:focus {
+  opacity: 1;
+}
+/*# sourceMappingURL=main.css.map */
