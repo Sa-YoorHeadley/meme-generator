@@ -37,21 +37,22 @@
 }
 
 .header .header-title {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
 .form {
   display: -ms-grid;
   display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (minmax(100px, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(100px, 1fr));
   margin-top: 6rem;
   padding: 2.5em;
-  -ms-grid-rows: auto auto;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template: auto auto / 1fr 1fr;
-  -webkit-column-gap: 1.5em;
-          column-gap: 1.5em;
-  row-gap: .95rem;
+  grid-column-gap: 1.5em;
+  grid-row-gap: .95rem;
 }
 
 .form .input {
@@ -70,8 +71,8 @@
 }
 
 .form .btn {
-  cursor: pointer;
   grid-column: span 2;
+  cursor: pointer;
   border: none;
   outline: none;
   padding: .75em 0;
@@ -88,5 +89,42 @@
 
 .form .btn:hover, .form .btn:focus {
   opacity: 1;
+}
+
+.form .image-container {
+  grid-column: span 2;
+  margin: 0 auto;
+  position: relative;
+}
+
+.form .image-container .image {
+  max-width: 100%;
+  max-height: 600px;
+  border-radius: .25rem;
+}
+
+.form .image-container .image-text {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 1.5rem 0;
+  padding: 0 0.25rem;
+  width: 80%;
+  font-family: Impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  text-align: center;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000, 2px 2px 5px #000;
+}
+
+.form .image-container .top {
+  top: 0;
+}
+
+.form .image-container .bottom {
+  bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */
