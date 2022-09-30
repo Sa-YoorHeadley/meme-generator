@@ -20,7 +20,7 @@
 <br />
 
 ## Description 
-This is my solution to the Photo Journal project on Scrimba.
+This is my solution to the Meme Generator project on Scrimba. This SPA React app calls the ImgFlip API to generate a random meme image. The inputs can be used to display lines of text on the top and/or bottom of the image.
 
 ### Concepts Used
 - Components, Props
@@ -28,6 +28,19 @@ This is my solution to the Photo Journal project on Scrimba.
 - Fetching APIs Event Listeners, Conditional Rendering
 - Responsive Web Design
 - CSS Variables, Flexbox, Grid, Position
+
+<br />
+
+<!-- Video -->
+<div align="center"> 
+  <img src="https://github.com/Sa-YoorHeadley/meme-generator/blob/main/assets/Preview.gif?raw=true" alt="screenshot" />
+</div>
+
+<br />
+
+> [Live URL](https://sa-yoorheadley.github.io/meme-generator/)
+
+<br />
 
 <!-- TechStack -->
 ## Tech Stack
@@ -37,20 +50,7 @@ This is my solution to the Photo Journal project on Scrimba.
     <li>SCSS</li>
     <li>HTML</li>
   </ul>
-
-<br />
-
-<!-- Screenshot -->
-<div align="center"> 
-  <img src="https://github.com/Sa-YoorHeadley/meme-generator/blob/main/assets/meme-generator.PNG" alt="screenshot" />
-</div>
-
-<br />
-
-> [Live URL](https://sa-yoorheadley.github.io/meme-generator/)
-
-<br />
-
+ <br />
 
 ## Prerequisites
 
