@@ -3,7 +3,7 @@
   <h1>Meme Generator</h1>
   
   <p>
-    Photo Journal SPA made using React
+    Meme Generator SPA made using React
   </p>
   
 <!-- Badges -->
